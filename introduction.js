@@ -347,3 +347,65 @@ function teste4(d)
 }
 
 teste1(()=>{teste2(()=>{teste3(()=>{teste4(()=>{})})})})
+
+
+
+let yu= {
+  fir:'vince',
+  sec:'man',
+  thir:'boy',
+  fou:function()
+  {
+    console.log(this.fir+this.sec)
+  }
+}
+yu.fou()
+
+
+
+let hemu=20
+
+function hu(hemu,b){
+  return hemu+b
+}
+console.log(hu(hemu,30))
+
+
+
+for(i=0;i<=100;i++){
+      
+  if(i%2==1&&i%3==1)
+  {
+    console.log(i)
+  }
+
+
+
+
+}
+
+
+
+async function run() {
+  console.log('Start');
+  await delay(1000); // wait 1 second
+  console.log('After 1 second');
+}
+
+run();
+
+
+
+
+async function fetchData() {
+  const result = await someAsyncOperation();
+  console.log(result);
+}
+
+const promise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("Success");
+  }, 6000);
+});
+
+promise.then(result => console.log(result)); // Logs "Success" after 1 sec
